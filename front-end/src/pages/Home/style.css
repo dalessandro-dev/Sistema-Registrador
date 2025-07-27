@@ -1,0 +1,167 @@
+.icon {
+    width: 30px;
+}
+
+.arrow-back img {
+    width: 35px;
+}
+
+.arrow-back {
+    position: absolute;
+    padding: 8px;
+}
+
+.container-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    background-color: blue;
+    white-space: nowrap;      
+    overflow: hidden;        
+    text-overflow: ellipsis;
+    height: 30%;
+    border-radius: 30px 30px 0 0;
+    padding: 20px;
+}
+
+.register {
+    border-radius: 30px;
+    width: 30%;
+    height: 70%;
+    position: absolute;
+    z-index: 1;
+    left: 30px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.div-search {
+    position: absolute;
+    right: 30px;
+    z-index: 0;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.search-bar {
+    display: flex;
+    width: 50%;
+    gap: 2px;
+}
+
+.search-conteiner {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    height: 5%;
+}
+
+.div-search .container-table {
+    width: 100%;
+    height: 88%;
+    border-radius: 12px;
+    overflow-y: auto;
+    overflow-x: auto;
+    background-color: #fff;
+    max-height: 88%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+th {
+    height: 40px;
+    position: sticky;
+    top: 0;
+    vertical-align: middle;
+    margin-bottom: 40px;
+}
+
+.radius-start {
+    border-radius: 12px 0 0 0;
+}
+
+.radius-end {
+    border-radius: 0 12px 0 0;
+}
+
+.div-load-error {
+    height: 90%;
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-form {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h-with-alert {
+    height: 90%; 
+}
+
+form {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.container-main form button {
+    margin: auto auto 2px auto;
+    width: 100%;
+    height: 15%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container-main h1 {
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-size: clamp(20px, 10vw, 40px);
+    color: white;
+    text-align: center;
+}
+
+.alert-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: 	#dce3f2;
+}
+
+.alert-container .alert-before {
+    height: 10%;
+    width: 100%;
+    transform: translateY(-10vh);
+    transition: transform 0.4s ease;
+}
+
+.alert-container .alert-message {
+    transform: translateY(0);
+    margin: 0;
+    height: 10%;
+    width: 100%;
+}
+
+.min-w {
+    min-width: 100px
+}
+
+
