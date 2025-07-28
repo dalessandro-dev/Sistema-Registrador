@@ -148,6 +148,8 @@ function Home() {
 
       alertMessage("success", "O usuário foi atualizado com sucesso!")
 
+      selectUserUpdate()
+      
       getUsers()
 
     } catch(error) {
