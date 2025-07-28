@@ -19,11 +19,15 @@ app.listen(port)
 app.get("/users", async (req, res) => {
     let users
     const {search, field} = req.query
-
-    if (!search || !field) {
+   
+    if (!search) {
         users = await prisma.users.findMany()
     } else {
-        const fieldsArray = Array.isArray(field) ? field : [field]
+        let fieldsArray = ["id", "name", "email", "age"]
+
+        if (field) {
+            fieldsArray = Array.isArray(field) ? field : [field]
+        }
 
         const filters = fieldsArray.map((field) => {
             if (field === "age") {

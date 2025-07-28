@@ -15,7 +15,7 @@ function Home() {
   const [users, setUsers] = useState([]) 
   const [active, setActive] = useState(false)
   const [idUserUpdate, setIdUserUpdate] = useState("")
-  const [selected, setSelected] = useState(["name", "age", "email", "id"])
+  const [selected, setSelected] = useState([])
   const [activeError, setActiveError] = useState(false)
   const [activeSuccess, setActiveSuccess] = useState(false)
   const [message, setMessage] = useState("")
